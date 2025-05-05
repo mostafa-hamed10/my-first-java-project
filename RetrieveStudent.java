@@ -22,9 +22,6 @@ public class RetrieveStudent {
         conectionDataBase.linkDataBase();
         Connection connection = conectionDataBase.connection;
 
-        System.out.println("Enter your order: ");
-        String order = br.readLine();
-        if(order.equals("select")) {
             System.out.println("Enter Student Id: ");
             String id = br.readLine();
             int userId = Integer.parseInt(id);
@@ -38,7 +35,7 @@ public class RetrieveStudent {
                 System.out.println("------------------------------------------------------------------------------");
             }
 
-        }
+
 
 
     }
