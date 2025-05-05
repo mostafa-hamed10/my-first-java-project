@@ -1,7 +1,7 @@
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.sql.*;
+
 
 
 
@@ -17,21 +17,21 @@ public class StudentAffairs {
 
         while (true){
             System.out.println("Enter your order Insert or Select or Search Student: ");
-            String order = br.readLine();
-            if(order.equals("insert")) {
+            String order = br.readLine().toLowerCase();
+            if(order.equals("Insert".toLowerCase())) {
                 InsertStudent insertStudent = new InsertStudent();
                 insertStudent.insertStudent();
 
-            } else if(order.equals("select")) {
+            } else if(order.equals("Select".toLowerCase())) {
                 RetrieveStudent retrieveStudent = new RetrieveStudent();
                 retrieveStudent.retrieveStudent();
-            } else if (order.equals("Search Student")) {
+            } else if (order.equals("Search Student".toLowerCase())) {
                 RetrieveStudent retrieveStudent = new RetrieveStudent();
                 retrieveStudent.foundStudentById();
             }
-            System.out.println("You Want Order More y/n");
+            System.out.println("You Want Order More y/n".toLowerCase());
             String answer = br.readLine();
-            if(answer.equals("n")){
+            if(answer.equals("n".toLowerCase())){
                 break;
             }
         }
