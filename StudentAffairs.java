@@ -1,12 +1,10 @@
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
+
 import java.sql.*;
 
 
-import org.apache.commons.dbcp2.BasicDataSource;
+
 public class StudentAffairs {
 
-    private static BasicDataSource basicDataSource = new BasicDataSource();
     private static ResultSet resultSet;
     private static PreparedStatement  preparedStatement;
     private static CallableStatement callableStatement;
