@@ -16,7 +16,7 @@ public class StudentAffairs {
 
 
         while (true){
-            System.out.println("Enter your order Insert or Select or Search Student: ");
+            System.out.println("Enter your order Insert or Select or Search Student or Delete Student: ");
             String order = br.readLine().toLowerCase();
             if(order.equals("Insert".toLowerCase())) {
                 InsertStudent insertStudent = new InsertStudent();
@@ -28,6 +28,9 @@ public class StudentAffairs {
             } else if (order.equals("Search Student".toLowerCase())) {
                 RetrieveStudent retrieveStudent = new RetrieveStudent();
                 retrieveStudent.foundStudentById();
+            } else if(order.equals("Delete Student".toLowerCase())){
+                DeleteStudent deleteStudent = new DeleteStudent();
+                deleteStudent.deleteStudent();
             }
             System.out.println("You Want Order More y/n".toLowerCase());
             String answer = br.readLine();

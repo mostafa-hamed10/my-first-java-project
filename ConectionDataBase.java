@@ -23,7 +23,6 @@ public class ConectionDataBase {
     public void linkDataBase(){
         try{
             connection = basicDataSource.getConnection();
-            System.out.println("Conection....");
         }catch (Exception e) {
             System.out.println(e);
         }
