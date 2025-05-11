@@ -43,9 +43,9 @@ public class InsertStudent {
 
             ps.addBatch();
 
-            System.out.println("Are You Want Enter Students More y/n".toLowerCase());
+            System.out.println("Are You Want Enter Students More Yes/No".toLowerCase());
             String answer = br.readLine();
-            if(answer.equals("n".toLowerCase())) {
+            if(answer.equals("No".toLowerCase())) {
                 break;
             }
         }
